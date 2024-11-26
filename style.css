@@ -9,15 +9,23 @@ main {
     align-items: center;
     margin-top: 2rem;
 }
+h3 {
+    margin: 1rem;
+    text-align: center;
+}
 .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     border: 0.2rem solid black;
     gap: 0.5rem;
     height: 24rem;
     width: 50rem;
     overflow-x: scroll;
+    scroll-behavior: smooth;
+    
+}
+.container::-webkit-scrollbar {
+    display: none; 
 }
 .image-cont {
     height: 14rem;
@@ -54,8 +62,24 @@ svg {
     height: 2rem;
     width: 2rem;
     margin: 1rem;
+    border: 0.1rem solid black;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
+svg:hover {
+    background-color: #d2c4c4;
+}
 
+@media (max-width:360px) {
+    svg {
+        display: none;
+    }
+    .container {
+        width: 22rem;
+    }
+}
 
 
