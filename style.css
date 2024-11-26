@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid black;
+    gap: 0.5rem;
+    height: 24rem;
+    width: 50rem;
+    overflow-x: scroll;
+}
+.image-cont {
+    height: 14rem;
+    width: 14rem;
+    margin-bottom: 1rem;
+    align-self: start;
+}
+.image-cont img {
+    height: 100%;
+    width: 100%;
+}
+.comment , .name {
+    width: 13rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    align-self: end;
+}
+.name {
+    font-weight: 700;
+}
+.card {
+    border: 0.1rem solid black;
+    display: grid;
+    grid-template-rows: 14rem 4rem 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 21rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+svg {
+    fill: black;
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+}
+
+
+
+
